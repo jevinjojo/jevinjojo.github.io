@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Jevin Jojo - Portfolio Website
 
 Personal portfolio website showcasing my work as a Blockchain Developer and open source contributions.
@@ -56,3 +57,7 @@ To customize this portfolio for your own use:
 - Email: jevinjojo1@gmail.com
 - LinkedIn: [linkedin.com/in/jevinjojo](https://www.linkedin.com/in/jevinjojo/)
 - GitHub: [github.com/jevinjojo](https://github.com/jevinjojo)
+=======
+# jevinjojo.github.io
+Portfolio website 
+>>>>>>> 5d70135d26b2a75a816b71e158074b2e0e178ef4

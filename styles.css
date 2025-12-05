@@ -6,15 +6,18 @@
 }
 
 :root {
-    --primary-color: #64ffda;
-    --secondary-color: #0a192f;
-    --dark-bg: #0a192f;
-    --darker-bg: #020c1b;
-    --light-text: #ccd6f6;
-    --lighter-text: #8892b0;
-    --white: #e6f1ff;
-    --card-bg: #112240;
-    --hover-bg: #1d3a5f;
+    --primary-color: #1a2332;
+    --secondary-color: #FFFFFF;
+    --dark-bg: #FFFFFF;
+    --darker-bg: #F8F8F8;
+    --light-text: #1a2332;
+    --lighter-text: #3d4a5c;
+    --white: #0d1117;
+    --card-bg: #F5F5F5;
+    --hover-bg: #E8E8E8;
+    --hover-color: #1a2332;
+    --accent-silver: #B3B3B3;
+    --accent-chalice: #ACACAC;
 }
 
 body {
@@ -41,17 +44,18 @@ html {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(10, 25, 47, 0.95);
-    backdrop-filter: blur(10px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 248, 248, 0.98) 100%);
+    backdrop-filter: blur(15px);
     z-index: 1000;
-    padding: 1rem 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 1.2rem 0;
+    box-shadow: 0 4px 20px rgba(26, 35, 50, 0.1);
+    border-bottom: 1px solid rgba(26, 35, 50, 0.05);
 }
 
 .nav-container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,43 +64,92 @@ html {
 .logo {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    font-size: 1.5rem;
-    font-weight: bold;
+    gap: 0.7rem;
+    font-size: 1.6rem;
+    font-weight: 700;
     color: var(--primary-color);
+    letter-spacing: -0.5px;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    transform: translateY(-2px);
+}
+
+.logo i {
+    font-size: 1.8rem;
+    background: linear-gradient(135deg, #1a2332 0%, #3d4a5c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.nav-menu li {
+    position: relative;
 }
 
 .nav-menu a {
     color: var(--light-text);
     text-decoration: none;
-    font-size: 0.95rem;
-    transition: color 0.3s;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #1a2332 0%, #3d4a5c 100%);
+    transition: width 0.3s ease;
 }
 
 .nav-menu a:hover {
     color: var(--primary-color);
 }
 
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
 .social-links {
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
-.social-links a {
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--light-text);
-    font-size: 1.3rem;
-    transition: all 0.3s;
+    font-size: 1.2rem;
+    background-color: rgba(26, 35, 50, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(26, 35, 50, 0.1);
 }
 
-.social-links a:hover {
-    color: var(--primary-color);
-    transform: translateY(-3px);
+.social-icon:hover {
+    color: #FFFFFF;
+    background-color: var(--primary-color);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(26, 35, 50, 0.2);
+    border-color: var(--primary-color);
 }
 
 /* Hero Section */
@@ -115,7 +168,7 @@ html {
     position: absolute;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(100, 255, 218, 0.1) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(179, 179, 179, 0.3) 0%, transparent 70%);
     border-radius: 50%;
     top: 10%;
     right: 10%;
@@ -123,8 +176,15 @@ html {
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
 }
 
 .hero-container {
@@ -179,9 +239,9 @@ html {
 }
 
 .btn-primary:hover {
-    background-color: rgba(100, 255, 218, 0.1);
+    background-color: rgba(255, 255, 255, 0.3);
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(100, 255, 218, 0.2);
+    box-shadow: 0 10px 20px rgba(172, 172, 172, 0.4);
 }
 
 .btn-secondary {
@@ -257,13 +317,25 @@ html {
 }
 
 @keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.05); }
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
 }
 
 @keyframes fadeInUp {
@@ -271,6 +343,7 @@ html {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -278,8 +351,13 @@ html {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 /* Projects Section */
@@ -334,7 +412,7 @@ html {
 .project-card:hover {
     transform: translateY(-5px);
     border-color: var(--primary-color);
-    box-shadow: 0 10px 30px rgba(100, 255, 218, 0.1);
+    box-shadow: 0 10px 30px rgba(172, 172, 172, 0.35);
 }
 
 .project-image {
@@ -378,7 +456,7 @@ html {
 }
 
 .tag {
-    background-color: rgba(100, 255, 218, 0.1);
+    background-color: rgba(179, 179, 179, 0.25);
     color: var(--primary-color);
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
@@ -443,10 +521,10 @@ html {
 }
 
 .contributions-table tbody tr:hover {
-    background-color: rgba(100, 255, 218, 0.03);
+    background-color: rgba(255, 255, 255, 0.2);
     border-color: var(--primary-color);
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(100, 255, 218, 0.1);
+    box-shadow: 0 10px 30px rgba(172, 172, 172, 0.35);
 }
 
 .contributions-table tbody tr:last-child {
@@ -542,7 +620,7 @@ html {
 .skill-card:hover {
     transform: translateY(-5px);
     border-color: var(--primary-color);
-    box-shadow: 0 10px 30px rgba(100, 255, 218, 0.1);
+    box-shadow: 0 10px 30px rgba(172, 172, 172, 0.35);
 }
 
 .skill-icon {

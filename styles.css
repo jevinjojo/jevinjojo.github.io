@@ -288,11 +288,11 @@ html {
     background-color: var(--darker-bg);
 }
 
-.projects-grid {
+.projects-grid-horizontal {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    margin-top: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .section-title {
@@ -403,86 +403,119 @@ html {
     transform: translateX(5px);
 }
 
-/* Contribution Card */
-.contribution-card {
-    background-color: var(--card-bg);
-    border-radius: 8px;
-    padding: 1.5rem;
-    transition: all 0.3s;
-    border: 1px solid transparent;
+/* Contributions Section */
+.contributions-section {
+    padding: 4rem 0;
+    background-color: var(--dark-bg);
 }
 
-.contribution-card:hover {
-    transform: translateY(-5px);
+.contributions-section .section-title {
+    text-align: left;
+    margin-bottom: 2.5rem;
+}
+
+/* Contributions Table Wrapper */
+.contributions-table-wrapper {
+    margin-top: 0;
+    width: 80%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+}
+
+/* Contributions Table */
+.contributions-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    table-layout: fixed;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.contributions-table tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid transparent;
+    transition: all 0.3s;
+}
+
+.contributions-table tbody tr:hover {
+    background-color: rgba(100, 255, 218, 0.03);
     border-color: var(--primary-color);
+    transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(100, 255, 218, 0.1);
 }
 
-.contribution-header {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
+.contributions-table tbody tr:last-child {
+    border-bottom: 1px solid transparent;
 }
 
-.contribution-icon {
-    width: 50px;
-    height: 50px;
-    background-color: var(--hover-bg);
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    color: var(--primary-color);
+.contributions-table tbody tr:last-child {
+    border-bottom: none;
 }
 
-.contribution-info {
-    flex: 1;
+.contributions-table tbody tr:first-child td {
+    padding-top: 1.2rem;
 }
 
-.contribution-title {
-    font-size: 1.2rem;
+.contributions-table tbody tr:last-child td {
+    padding-bottom: 1.2rem;
+}
+
+.contributions-table td {
+    padding: 0.8rem 1rem;
+    vertical-align: middle;
+    border: none;
+}
+
+.logo-col {
+    width: 10%;
+    text-align: center;
+    padding: 0.8rem 0.5rem !important;
+}
+
+.logo-col img {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    object-fit: contain;
+}
+
+.contribution-col {
+    width: 75%;
     color: var(--white);
-    margin-bottom: 0.3rem;
-}
-
-.contribution-repo {
-    color: var(--lighter-text);
+    font-weight: 500;
     font-size: 0.9rem;
+    line-height: 1.3;
+    padding: 0.8rem 0.8rem !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.contribution-description {
-    color: var(--lighter-text);
-    margin-bottom: 1rem;
-    line-height: 1.6;
+.pr-col {
+    width: 15%;
+    text-align: center;
+    padding: 0.8rem 0.5rem !important;
 }
 
-.contribution-meta {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.meta-item {
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
-    color: var(--lighter-text);
-    font-size: 0.9rem;
-}
-
-.contribution-link {
+.pr-link {
     color: var(--primary-color);
     text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    transition: all 0.3s;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: color 0.3s;
+    white-space: nowrap;
 }
 
-.contribution-link:hover {
-    transform: translateX(5px);
+.pr-link:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
 }
+
 
 /* Skills Section */
 .skills-section {
@@ -580,7 +613,7 @@ html {
         font-size: 6rem;
     }
 
-    .projects-grid {
+    .projects-grid-horizontal {
         grid-template-columns: 1fr;
     }
 

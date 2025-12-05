@@ -60,10 +60,59 @@
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
         <div class="container">
-            <div class="projects-grid">
-                <!-- Featured Projects Column -->
-                <div class="projects-column">
-                    <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid-horizontal">
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder-image">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">AI-Powered DeFi Yield Optimizer</h3>
+                            <p class="project-description">
+                                An intelligent DeFi platform that uses real AI to analyze portfolios, generate personalized yield strategies, and execute them on-chain through smart contracts.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">AI</span>
+                                <span class="tag">DeFi</span>
+                                <span class="tag">Smart Contracts</span>
+                                <span class="tag">Blockchain</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/jevinjojo/Yieldmind-AI-Defi-Optimizer" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="placeholder-image">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Bulk Token Sender</h3>
+                            <p class="project-description">
+                                A gas-efficient tool for sending ERC20 tokens to multiple addresses in one transaction. Supports both safe and unsafe (gas-optimized) modes. Save time and gas fees!
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">ERC20</span>
+                                <span class="tag">Smart Contracts</span>
+                                <span class="tag">Gas Optimization</span>
+                                <span class="tag">Solidity</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/jevinjojo/Token-Bulk-Sender" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i> View Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="project-card">
                         <div class="project-image">
                             <div class="placeholder-image">
@@ -87,38 +136,106 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
-                </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Open-Source Contributions Column -->
-                <div class="projects-column">
-                    <h2 class="section-title">Open-Source Contributions</h2>
-                    <div class="contribution-card">
-                        <div class="contribution-header">
-                            <div class="contribution-icon">
-                                <i class="fab fa-github"></i>
-                            </div>
-                            <div class="contribution-info">
-                                <h3 class="contribution-title">Implement metrics for engine_getBlobsV2</h3>
-                                <p class="contribution-repo">hyperledger/besu</p>
-                            </div>
-                        </div>
-                        <p class="contribution-description">
-                            Contributed to Hyperledger Besu by implementing metrics for the engine_getBlobsV2 endpoint, enhancing monitoring capabilities for blob transactions.
-                        </p>
-                        <div class="contribution-meta">
-                            <span class="meta-item">
-                                <i class="fas fa-code-branch"></i> Pull Request
-                            </span>
-                            <span class="meta-item">
-                                <i class="fas fa-check"></i> Merged
-                            </span>
-                        </div>
-                        <a href="https://github.com/hyperledger/besu/pull/8951" target="_blank" class="contribution-link">
-                            <i class="fab fa-github"></i> View PR #8951
-                        </a>
-                    </div>
-                </div>
+    <!-- Open-Source Contributions Section -->
+    <section id="contributions" class="contributions-section">
+        <div class="container">
+            <h2 class="section-title">Open-Source Contributions</h2>
+            <div class="contributions-table-wrapper">
+                <table class="contributions-table">
+                    <tbody>
+                        <!-- Hyperledger Besu Contribution -->
+                        <tr>
+                            <td class="logo-col">
+                                <img src="besu-logo.png" alt="Hyperledger Besu" class="project-logo">
+                            </td>
+                            <td class="contribution-col">Implement metrics for engine_getBlobsV2</td>
+                            <td class="pr-col">
+                                <a href="https://github.com/hyperledger/besu/pull/8951" target="_blank" class="pr-link">PR #8951</a>
+                            </td>
+                        </tr>
+
+                        <!-- Braidpool - Backend Node Orchestration -->
+                        <tr>
+                            <td class="logo-col">
+                                <img src="braidpool-logo.png" alt="Braidpool" class="project-logo">
+                            </td>
+                            <td class="contribution-col">Backend Node Orchestration & Rust API Server</td>
+                            <td class="pr-col">
+                                <a href="https://github.com/braidpool/braidpool/pull/259" target="_blank" class="pr-link">PR #259</a>
+                            </td>
+                        </tr>
+
+                        <!-- Braidpool - Dashboard UI -->
+                        <tr>
+                            <td class="logo-col">
+                                <img src="braidpool-logo.png" alt="Braidpool" class="project-logo">
+                            </td>
+                            <td class="contribution-col">Dashboard UI with Category Logic</td>
+                            <td class="pr-col">
+                                <a href="https://github.com/braidpool/braidpool/pull/261" target="_blank" class="pr-link">PR #261</a>
+                            </td>
+                        </tr>
+
+                        <!-- OpenWISP - RADIUS Authorization -->
+                        <tr>
+                            <td class="logo-col">
+                                <img src="openwisp-logo.png" alt="OpenWISP" class="project-logo">
+                            </td>
+                            <td class="contribution-col">Called/Calling-Station-Id to Authorize API</td>
+                            <td class="pr-col">
+                                <a href="https://github.com/openwisp/openwisp-radius/pull/649" target="_blank" class="pr-link">PR #649</a>
+                            </td>
+                        </tr>
+
+                        <!-- CosmosJourneyer - Screenshot Thumbnails -->
+                        <tr>
+                            <td class="logo-col">
+                                <img src="cosmosjourneyer-logo.png" alt="CosmosJourneyer" class="project-logo">
+                            </td>
+                            <td class="contribution-col">Add Screenshot Thumbnails to Save Files</td>
+                            <td class="pr-col">
+                                <a href="https://github.com/BarthPaleologue/CosmosJourneyer/pull/450" target="_blank" class="pr-link">PR #450</a>
+                            </td>
+                        </tr>
+
+                        <!-- CosmosJourneyer - Music Volume Control -->
+                        <tr>
+                            <td class="logo-col">
+                                <img src="cosmosjourneyer-logo.png" alt="CosmosJourneyer" class="project-logo">
+                            </td>
+                            <td class="contribution-col">Add music volume control slider to settings panel</td>
+                            <td class="pr-col">
+                                <a href="https://github.com/BarthPaleologue/CosmosJourneyer/pull/463" target="_blank" class="pr-link">PR #463</a>
+                            </td>
+                        </tr>
+
+                        <!-- Eventyay - Auto-expanding Textarea -->
+                        <tr>
+                            <td class="logo-col">
+                                <img src="eventyay-logo.png" alt="Eventyay" class="project-logo">
+                            </td>
+                            <td class="contribution-col">Auto-expanding textarea for frontpage text in event settings</td>
+                            <td class="pr-col">
+                                <a href="https://github.com/fossasia/eventyay/pull/1340" target="_blank" class="pr-link">PR #1340</a>
+                            </td>
+                        </tr>
+
+                        <!-- Eventyay - Remove Delete Account Option -->
+                        <tr>
+                            <td class="logo-col">
+                                <img src="eventyay-logo.png" alt="Eventyay" class="project-logo">
+                            </td>
+                            <td class="contribution-col">Remove "Delete My Account" option from Speaker Profile section</td>
+                            <td class="pr-col">
+                                <a href="https://github.com/fossasia/eventyay/pull/1238" target="_blank" class="pr-link">PR #1238</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </section>

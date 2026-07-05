@@ -3,29 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jevin Jojo - Blockchain Developer</title>
+    <meta name="description" content="Jevin Jojo is a blockchain protocol engineer building Rust, Go, Solidity, and Web3 backend systems with open-source contributions across the ecosystem.">
+    <title>Jevin Jojo | Blockchain Protocol Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <div class="site-shell"></div>
+
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">
-                <i class="fas fa-cube"></i>
-                <span>jevin.dev</span>
-            </div>
+            <a class="logo" href="#home" aria-label="Jevin Jojo home">
+                <span class="logo-mark">JJ</span>
+                <span class="logo-copy">
+                    <strong>jevin.dev</strong>
+                    <span>protocol engineering</span>
+                </span>
+            </a>
             <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contributions">Open Source</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#skills">Stack</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/jevinjojo/" target="_blank" aria-label="LinkedIn" class="social-icon">
+                <a href="https://www.linkedin.com/in/jevinjojo/" target="_blank" rel="noreferrer" aria-label="LinkedIn" class="social-icon">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/jevinjojo" target="_blank" aria-label="GitHub" class="social-icon">
+                <a href="https://github.com/jevinjojo" target="_blank" rel="noreferrer" aria-label="GitHub" class="social-icon">
                     <i class="fab fa-github"></i>
                 </a>
                 <a href="mailto:jevinjojo1@gmail.com" aria-label="Email" class="social-icon">
@@ -35,320 +44,296 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">Jevin Jojo</h1>
-                <p class="hero-description">
-                    Blockchain Developer, Working on open source projects
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Contact</a>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="tech-icon">
-                    <i class="fas fa-cubes"></i>
-                    <div class="tech-circle"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid-horizontal">
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="placeholder-image">
-                                <i class="fas fa-brain"></i>
-                            </div>
+    <main id="home">
+        <section class="hero section-reveal">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <p class="eyebrow">Blockchain Protocol Engineer</p>
+                    <h1 class="hero-title">Infrastructure, contracts, and backend systems for Web3.</h1>
+                    <p class="hero-description">
+                        Rust, Go, Solidity, Foundry, The Graph, and cloud-native Web3 backends, built with a focus on reliability and execution quality.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <span class="stat-value">11</span>
+                            <span class="stat-label">core domains</span>
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">AI-Powered DeFi Yield Optimizer</h3>
-                            <p class="project-description">
-                                An intelligent DeFi platform that uses real AI to analyze portfolios, generate personalized yield strategies, and execute them on-chain through smart contracts.
-                            </p>
-                            <div class="project-tags">
-                                <span class="tag">AI</span>
-                                <span class="tag">DeFi</span>
-                                <span class="tag">Smart Contracts</span>
-                                <span class="tag">Blockchain</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/jevinjojo/Yieldmind-AI-Defi-Optimizer" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i> View Code
-                                </a>
-                            </div>
+                        <div class="stat-card">
+                            <span class="stat-value">OSS</span>
+                            <span class="stat-label">active contributor</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-value">Web3</span>
+                            <span class="stat-label">backend + protocol</span>
                         </div>
                     </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="placeholder-image">
-                                <i class="fas fa-paper-plane"></i>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Bulk Token Sender</h3>
-                            <p class="project-description">
-                                A gas-efficient tool for sending ERC20 tokens to multiple addresses in one transaction. Supports both safe and unsafe (gas-optimized) modes. Save time and gas fees!
-                            </p>
-                            <div class="project-tags">
-                                <span class="tag">ERC20</span>
-                                <span class="tag">Smart Contracts</span>
-                                <span class="tag">Gas Optimization</span>
-                                <span class="tag">Solidity</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/jevinjojo/Token-Bulk-Sender" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i> View Code
-                                </a>
-                            </div>
-                        </div>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View selected work</a>
+                        <a href="#contact" class="btn btn-secondary">Start a conversation</a>
                     </div>
-
-                    <div class="project-card">
-                        <div class="project-image">
-                            <div class="placeholder-image">
-                                <i class="fas fa-rocket"></i>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-panel">
+                        <div class="panel-topline">
+                            <span>Currently focused on</span>
+                            <span>Web3 systems</span>
+                        </div>
+                        <div class="hero-ring">
+                            <div class="hero-ring-inner">
+                                <div class="hero-metric">
+                                    <span class="metric-label">Primary stack</span>
+                                    <span class="metric-value">Rust + Go</span>
+                                </div>
+                                <div class="hero-metric">
+                                    <span class="metric-label">Execution layer</span>
+                                    <span class="metric-value">Solidity + Foundry</span>
+                                </div>
+                                <div class="hero-metric">
+                                    <span class="metric-label">Product surface</span>
+                                    <span class="metric-value">Protocol + backend</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Gasless Social NFT Marketplace</h3>
-                            <p class="project-description">
-                                A modern NFT marketplace that eliminates Web3 friction through social login and gasless transactions. Users can mint NFTs using their Google or Twitter accounts without needing crypto wallets or paying gas fees.
-                            </p>
-                            <div class="project-tags">
-                                <span class="tag">NFT</span>
-                                <span class="tag">Web3</span>
-                                <span class="tag">Blockchain</span>
-                                <span class="tag">Gasless</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/jevinjojo/Gasless-Social-NFT-Marketplace" target="_blank" class="project-link">
-                                    <i class="fab fa-github"></i> View Code
-                                </a>
-                            </div>
+                        <div class="hero-tags">
+                            <span>thegraph</span>
+                            <span>l2-crosschain</span>
+                            <span>evm-internals</span>
+                            <span>cloud-devops</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-    <!-- Open-Source Contributions Section -->
-    <section id="contributions" class="contributions-section">
-        <div class="container">
-            <h2 class="section-title">Open-Source Contributions</h2>
-            <div class="contributions-table-wrapper">
-                <table class="contributions-table">
-                    <tbody>
-                        <!-- Hyperledger Besu Contribution -->
-                        <tr>
-                            <td class="logo-col">
-                                <img src="besu-logo.png" alt="Hyperledger Besu" class="project-logo">
-                            </td>
-                            <td class="contribution-col">Implement metrics for engine_getBlobsV2</td>
-                            <td class="pr-col">
-                                <a href="https://github.com/hyperledger/besu/pull/8951" target="_blank" class="pr-link">PR #8951</a>
-                            </td>
-                        </tr>
-
-                        <!-- Braidpool - Backend Node Orchestration -->
-                        <tr>
-                            <td class="logo-col">
-                                <img src="braidpool-logo.png" alt="Braidpool" class="project-logo">
-                            </td>
-                            <td class="contribution-col">Backend Node Orchestration & Rust API Server</td>
-                            <td class="pr-col">
-                                <a href="https://github.com/braidpool/braidpool/pull/259" target="_blank" class="pr-link">PR #259</a>
-                            </td>
-                        </tr>
-
-                        <!-- Braidpool - Dashboard UI -->
-                        <tr>
-                            <td class="logo-col">
-                                <img src="braidpool-logo.png" alt="Braidpool" class="project-logo">
-                            </td>
-                            <td class="contribution-col">Dashboard UI with Category Logic</td>
-                            <td class="pr-col">
-                                <a href="https://github.com/braidpool/braidpool/pull/261" target="_blank" class="pr-link">PR #261</a>
-                            </td>
-                        </tr>
-
-                        <!-- OpenWISP - RADIUS Authorization -->
-                        <tr>
-                            <td class="logo-col">
-                                <img src="openwisp-logo.png" alt="OpenWISP" class="project-logo">
-                            </td>
-                            <td class="contribution-col">Called/Calling-Station-Id to Authorize API</td>
-                            <td class="pr-col">
-                                <a href="https://github.com/openwisp/openwisp-radius/pull/649" target="_blank" class="pr-link">PR #649</a>
-                            </td>
-                        </tr>
-
-                        <!-- CosmosJourneyer - Screenshot Thumbnails -->
-                        <tr>
-                            <td class="logo-col">
-                                <img src="cosmosjourneyer-logo.png" alt="CosmosJourneyer" class="project-logo">
-                            </td>
-                            <td class="contribution-col">Add Screenshot Thumbnails to Save Files</td>
-                            <td class="pr-col">
-                                <a href="https://github.com/BarthPaleologue/CosmosJourneyer/pull/450" target="_blank" class="pr-link">PR #450</a>
-                            </td>
-                        </tr>
-
-                        <!-- CosmosJourneyer - Music Volume Control -->
-                        <tr>
-                            <td class="logo-col">
-                                <img src="cosmosjourneyer-logo.png" alt="CosmosJourneyer" class="project-logo">
-                            </td>
-                            <td class="contribution-col">Add music volume control slider to settings panel</td>
-                            <td class="pr-col">
-                                <a href="https://github.com/BarthPaleologue/CosmosJourneyer/pull/463" target="_blank" class="pr-link">PR #463</a>
-                            </td>
-                        </tr>
-
-                        <!-- Eventyay - Auto-expanding Textarea -->
-                        <tr>
-                            <td class="logo-col">
-                                <img src="eventyay-logo.png" alt="Eventyay" class="project-logo">
-                            </td>
-                            <td class="contribution-col">Auto-expanding textarea for frontpage text in event settings</td>
-                            <td class="pr-col">
-                                <a href="https://github.com/fossasia/eventyay/pull/1340" target="_blank" class="pr-link">PR #1340</a>
-                            </td>
-                        </tr>
-
-                        <!-- Eventyay - Remove Delete Account Option -->
-                        <tr>
-                            <td class="logo-col">
-                                <img src="eventyay-logo.png" alt="Eventyay" class="project-logo">
-                            </td>
-                            <td class="contribution-col">Remove "Delete My Account" option from Speaker Profile section</td>
-                            <td class="pr-col">
-                                <a href="https://github.com/fossasia/eventyay/pull/1238" target="_blank" class="pr-link">PR #1238</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <div class="container">
-            <h2 class="section-title center">My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-js"></i>
-                    </div>
-                    <h3 class="skill-name">JavaScript</h3>
+        <section id="about" class="about-section section-reveal">
+            <div class="container narrow">
+                <div class="section-kicker">About</div>
+                <h2 class="section-title">Protocol depth and delivery.</h2>
+                <div class="about-grid">
+                    <p>
+                        Work across the full Web3 stack, from low-level protocol behavior and EVM internals to backend services, indexers, and operational tooling.
+                    </p>
+                    <p>
+                        Systems, open source, and stack.
+                    </p>
                 </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-ethereum"></i>
-                    </div>
-                    <h3 class="skill-name">Ethereum</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-bitcoin"></i>
-                    </div>
-                    <h3 class="skill-name">Bitcoin</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-coins"></i>
-                    </div>
-                    <h3 class="skill-name">DeFi</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-ethereum"></i>
-                    </div>
-                    <h3 class="skill-name">Solidity</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-hard-hat"></i>
-                    </div>
-                    <h3 class="skill-name">Hardhat</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-docker"></i>
-                    </div>
-                    <h3 class="skill-name">Docker</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-git-alt"></i>
-                    </div>
-                    <h3 class="skill-name">Git</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-project-diagram"></i>
-                    </div>
-                    <h3 class="skill-name">DSA</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-js"></i>
-                    </div>
-                    <h3 class="skill-name">TypeScript</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-node-js"></i>
-                    </div>
-                    <h3 class="skill-name">Node.js</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3 class="skill-name">Express.js</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-python"></i>
-                    </div>
-                    <h3 class="skill-name">Python</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-rust"></i>
-                    </div>
-                    <h3 class="skill-name">Rust</h3>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">
-                        <i class="fab fa-cuttlefish"></i>
-                    </div>
-                    <h3 class="skill-name">C/C++</h3>
+                <div class="focus-strip">
+                    <span>Protocol engineering</span>
+                    <span>Smart contract systems</span>
+                    <span>Web3 backend architecture</span>
+                    <span>Cloud DevOps</span>
+                    <span>Open-source collaboration</span>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer id="contact" class="footer">
+        <section id="projects" class="projects-section section-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <div class="section-kicker">Selected Work</div>
+                        <h2 class="section-title">Security and cross-chain execution.</h2>
+                    </div>
+                    <p class="section-intro">Two flagship builds.</p>
+                </div>
+                <div class="projects-grid-horizontal">
+                    <article class="project-card">
+                        <div class="project-image project-image-gradient gradient-one">
+                            <div class="placeholder-image">
+                                <i class="fas fa-shield-halved"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">AI DevSecOps pipeline</div>
+                            <h3 class="project-title">SolGuard</h3>
+                            <p class="project-description">An AI-powered DevSecOps pipeline for Solidity that runs multi-model consensus audits on every PR, blocks unsafe changes, and auto-deploys approved contracts with ephemeral keys that never touch disk.</p>
+                            <div class="project-tags">
+                                <span class="tag">Go</span>
+                                <span class="tag">Foundry</span>
+                                <span class="tag">AI Consensus</span>
+                                <span class="tag">DevSecOps</span>
+                                <span class="tag">Solidity</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/jevinjojo/Solguard" target="_blank" rel="noreferrer" class="project-link">
+                                    <i class="fab fa-github"></i> View code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image project-image-gradient gradient-two">
+                            <div class="placeholder-image">
+                                <i class="fas fa-route"></i>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">Cross-chain protocol</div>
+                            <h3 class="project-title">Cross-Chain Intent-Based Swapping Protocol</h3>
+                            <p class="project-description">An intent-based exchange protocol inspired by UniswapX where makers sign off-chain EIP-712 orders, a Go solver executes gasless fills, and the on-chain contract settles trustlessly via ecrecover.</p>
+                            <div class="project-tags">
+                                <span class="tag">Solidity</span>
+                                <span class="tag">Foundry</span>
+                                <span class="tag">Go</span>
+                                <span class="tag">Cross-chain</span>
+                                <span class="tag">EIP-712</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/jevinjojo/Cross-Chain-Intent-Based-Swapping-Protocol" target="_blank" rel="noreferrer" class="project-link">
+                                    <i class="fab fa-github"></i> View code
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contributions" class="contributions-section section-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <div class="section-kicker">Open Source</div>
+                        <h2 class="section-title">Contributions across infrastructure, wallets, orchestration, and product surfaces.</h2>
+                    </div>
+                    <p class="section-intro">Selected pull requests.</p>
+                </div>
+                <div class="contributions-grid">
+                    <article class="contribution-card">
+                        <img src="besu-logo.png" alt="Hyperledger Besu" class="project-logo">
+                        <div>
+                            <div class="contribution-project">Hyperledger Besu</div>
+                            <p>Implement metrics for engine_getBlobsV2</p>
+                        </div>
+                        <a href="https://github.com/hyperledger/besu/pull/8951" target="_blank" rel="noreferrer" class="pr-link">PR #8951</a>
+                    </article>
+                    <article class="contribution-card">
+                        <img src="braidpool-logo.png" alt="Braidpool" class="project-logo">
+                        <div>
+                            <div class="contribution-project">Braidpool</div>
+                            <p>Backend node orchestration and Rust API server</p>
+                        </div>
+                        <a href="https://github.com/braidpool/braidpool/pull/259" target="_blank" rel="noreferrer" class="pr-link">PR #259</a>
+                    </article>
+                    <article class="contribution-card">
+                        <img src="braidpool-logo.png" alt="Braidpool" class="project-logo">
+                        <div>
+                            <div class="contribution-project">Braidpool</div>
+                            <p>Dashboard UI with category logic</p>
+                        </div>
+                        <a href="https://github.com/braidpool/braidpool/pull/261" target="_blank" rel="noreferrer" class="pr-link">PR #261</a>
+                    </article>
+                    <article class="contribution-card">
+                        <img src="openwisp-logo.png" alt="OpenWISP" class="project-logo">
+                        <div>
+                            <div class="contribution-project">OpenWISP</div>
+                            <p>Called/Calling-Station-Id authorization API</p>
+                        </div>
+                        <a href="https://github.com/openwisp/openwisp-radius/pull/649" target="_blank" rel="noreferrer" class="pr-link">PR #649</a>
+                    </article>
+                    <article class="contribution-card">
+                        <img src="cosmosjourneyer-logo.png" alt="CosmosJourneyer" class="project-logo">
+                        <div>
+                            <div class="contribution-project">CosmosJourneyer</div>
+                            <p>Screenshot thumbnails and settings improvements</p>
+                        </div>
+                        <a href="https://github.com/BarthPaleologue/CosmosJourneyer/pull/450" target="_blank" rel="noreferrer" class="pr-link">PR #450</a>
+                    </article>
+                    <article class="contribution-card">
+                        <img src="eventyay-logo.png" alt="Eventyay" class="project-logo">
+                        <div>
+                            <div class="contribution-project">Eventyay</div>
+                            <p>Textarea and profile workflow improvements</p>
+                        </div>
+                        <a href="https://github.com/fossasia/eventyay/pull/1340" target="_blank" rel="noreferrer" class="pr-link">PR #1340</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section section-reveal">
+            <div class="container">
+                <div class="section-header">
+                    <div>
+                        <div class="section-kicker">Core Stack</div>
+                        <h2 class="section-title center">Engineering stack.</h2>
+                    </div>
+                </div>
+                <div class="skills-grid">
+                    <article class="skill-card featured-skill">
+                        <div class="skill-icon"><i class="fab fa-rust"></i></div>
+                        <h3 class="skill-name">Rust</h3>
+                        <p>Performance-critical services, infrastructure, and protocol-adjacent systems.</p>
+                    </article>
+                    <article class="skill-card featured-skill">
+                        <div class="skill-icon"><i class="fas fa-gears"></i></div>
+                        <h3 class="skill-name">Go</h3>
+                        <p>Reliable backend services, tooling, and cloud-native orchestration.</p>
+                    </article>
+                    <article class="skill-card featured-skill">
+                        <div class="skill-icon"><i class="fas fa-link"></i></div>
+                        <h3 class="skill-name">The Graph</h3>
+                        <p>Indexing, query layers, and data products for decentralized applications.</p>
+                    </article>
+                    <article class="skill-card featured-skill">
+                        <div class="skill-icon"><i class="fas fa-shuffle"></i></div>
+                        <h3 class="skill-name">L2 Cross-Chain</h3>
+                        <p>Bridging, interoperability, and multi-chain execution flows.</p>
+                    </article>
+                    <article class="skill-card featured-skill">
+                        <div class="skill-icon"><i class="fas fa-wave-square"></i></div>
+                        <h3 class="skill-name">EVM Internals</h3>
+                        <p>Client behavior, execution semantics, and system-level debugging.</p>
+                    </article>
+                    <article class="skill-card featured-skill">
+                        <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3 class="skill-name">DeFi</h3>
+                        <p>Protocol mechanics, vault logic, and financial product design.</p>
+                    </article>
+                    <article class="skill-card featured-skill">
+                        <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                        <h3 class="skill-name">Cloud DevOps</h3>
+                        <p>Deployment, observability, and infrastructure reliability.</p>
+                    </article>
+                    <article class="skill-card featured-skill">
+                        <div class="skill-icon"><i class="fas fa-server"></i></div>
+                        <h3 class="skill-name">Web3 Backend</h3>
+                        <p>APIs, job orchestration, integrations, and production services.</p>
+                    </article>
+                    <article class="skill-card featured-skill">
+                        <div class="skill-icon"><i class="fas fa-hammer"></i></div>
+                        <h3 class="skill-name">Foundry</h3>
+                        <p>Testing, scripting, and deployment workflows for Solidity systems.</p>
+                    </article>
+                    <article class="skill-card featured-skill">
+                        <div class="skill-icon"><i class="fab fa-ethereum"></i></div>
+                        <h3 class="skill-name">Solidity</h3>
+                        <p>Smart contracts focused on safety, clarity, and gas efficiency.</p>
+                    </article>
+                    <article class="skill-card featured-skill skill-wide">
+                        <div class="skill-icon"><i class="fas fa-compass-drafting"></i></div>
+                        <h3 class="skill-name">Protocol Engineering</h3>
+                        <p>System design across consensus-adjacent thinking, execution paths, and product reliability.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer section-reveal">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-card">
+                <div>
+                    <div class="section-kicker">Contact</div>
+                    <h2>Open to protocol, backend, and smart contract work.</h2>
+                    <p>For Web3 infrastructure, contracts, and delivery, reach out directly.</p>
+                </div>
                 <div class="footer-social">
-                    <a href="https://www.linkedin.com/in/jevinjojo/" target="_blank" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/jevinjojo/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="https://github.com/jevinjojo" target="_blank" aria-label="GitHub">
+                    <a href="https://github.com/jevinjojo" target="_blank" rel="noreferrer" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
                     <a href="mailto:jevinjojo1@gmail.com" aria-label="Email">
@@ -360,6 +345,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="blockchain-animation.js"></script>
 </body>
 </html>

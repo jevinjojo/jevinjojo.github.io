@@ -5,7 +5,7 @@ Personal portfolio website showcasing my work as a Blockchain Developer and open
 ## 🌐 Live Site
 This site is hosted on GitHub Pages at: [https://jevinjojo.github.io](https://jevinjojo.github.io)
 
-## 🚀 Features
+## 🚀 Features  
 
 - **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
 - **Modern UI**: Dark theme with smooth animations and transitions

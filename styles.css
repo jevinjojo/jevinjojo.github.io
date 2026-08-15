@@ -511,6 +511,10 @@ main {
     background: linear-gradient(135deg, rgba(240, 163, 90, 0.22), rgba(14, 22, 37, 0.92));
 }
 
+.project-image-gradient.gradient-three {
+    background: linear-gradient(135deg, rgba(113, 200, 255, 0.24), rgba(14, 22, 37, 0.92));
+}
+
 .placeholder-image {
     position: relative;
     z-index: 1;

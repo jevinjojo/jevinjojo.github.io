@@ -17,7 +17,7 @@ function setNavbarState() {
 }
 
 function setActiveNav() {
-  const sections = ["about", "projects", "contributions", "skills", "contact"]
+  const sections = ["about", "grants", "projects", "contributions", "skills", "contact"]
     .map((id) => document.getElementById(id))
     .filter(Boolean);
 

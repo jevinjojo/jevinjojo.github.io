@@ -820,3 +820,149 @@ main {
         transform: none;
     }
 }
+
+/* ==========================================================================
+   Ecosystem Grants Section
+   ========================================================================== */
+.grants-section {
+    padding: 84px 0;
+    background: radial-gradient(circle at 50% 0%, rgba(0, 180, 160, 0.08), transparent 45%);
+}
+
+.grant-hero-card {
+    padding: 2.2rem;
+    border-radius: 28px;
+    background: linear-gradient(180deg, rgba(14, 25, 40, 0.96), rgba(8, 16, 28, 0.92));
+    border: 1px solid rgba(0, 180, 160, 0.28);
+    box-shadow: 0 24px 70px rgba(0, 180, 160, 0.08), var(--shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+.grant-hero-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #00b4a0, #f0a35a, transparent);
+}
+
+.grant-badge-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.grant-award-pill,
+.grant-network-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.4rem 0.95rem;
+    border-radius: 999px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.grant-award-pill {
+    background: rgba(240, 163, 90, 0.14);
+    border: 1px solid rgba(240, 163, 90, 0.38);
+    color: #f6c07e;
+}
+
+.grant-network-pill {
+    background: rgba(0, 180, 160, 0.12);
+    border: 1px solid rgba(0, 180, 160, 0.32);
+    color: #4ee0cd;
+}
+
+.grant-main-content {
+    display: grid;
+    grid-template-columns: 1.35fr 0.65fr;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.grant-eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.4rem;
+}
+
+.grant-title {
+    font-size: clamp(2rem, 2.8vw, 2.7rem);
+    letter-spacing: -0.04em;
+    color: var(--text);
+    margin-bottom: 1rem;
+}
+
+.grant-description {
+    font-size: 1.05rem;
+    color: var(--text-soft);
+    line-height: 1.65;
+    margin-bottom: 0.8rem;
+}
+
+.grant-sub-description {
+    font-size: 0.95rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 1.4rem;
+}
+
+.grant-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.55rem;
+    margin-bottom: 1.8rem;
+}
+
+.grant-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.grant-stats-side {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.grant-metric-box {
+    padding: 1.3rem;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grant-metric-box .metric-num {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.grant-metric-box .metric-desc {
+    margin-top: 0.3rem;
+    font-size: 0.8rem;
+    color: var(--text-soft);
+}
+
+@media (max-width: 900px) {
+    .grant-main-content {
+        grid-template-columns: 1fr;
+    }
+}
